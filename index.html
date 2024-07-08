@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Task1</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .col1{
+            color: red;
+            background-color: antiquewhite;
+            width: 20%;
+            height: 100px;
+            padding: 20px;
+            text-align: center;
+            font-size: x-large;
+            display: inline-block;
+        }
+        #col2{
+            color:blue;
+            background-color: antiquewhite;
+            width: 20%;
+            height: 100px;
+            padding: 20px;
+            text-align: center;
+            font-size: x-large;
+            display: inline-block;
+        }
+        #col3{
+            color:green;
+            background-color: antiquewhite;
+            width: 20%;
+            height: 100px;
+            padding: 20px;
+            text-align: center;
+            font-size: x-large;
+            display: inline-block;
+        }
+        .col4{
+            color:black;
+            background-color: antiquewhite;
+            width: 20%;
+            height: 100px;
+            padding: 20px;
+            text-align: center;
+            font-size: x-large;
+            display: inline-block;
+        }
+        .body{
+            margin: 100px;
+        }
+        @media (max-width:600px) and (orientation:landscape) {
+            .col1,.col4,#col2,#col3{
+                width: 35%;
+              
+            }
+        }
+            
+            @media (max-width:1060px) and (orientation:landscape) {
+            .col1,#col2,#col3,.col4{
+                width: 40%;
+            }
+        }
+    
+        @media (max-width:1300px) and (orientation:portrait) {
+            .col1,.col4,#col2,#col3{
+                width: 50%;
+            }
+            
+        }
+       
+        
+    </style>
+</head>
+<body class="body">
+    
+    <h1>Task1</h1>
+  
+    <div class="col1">Colum1</div>
+    <div id="col2">Colum2</div>
+    <div id="col3">Colum3</div>
+    <div class="col4">Colum4</div>
+
+   
+</body>
+</html>
